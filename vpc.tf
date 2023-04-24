@@ -166,7 +166,7 @@ resource "aws_route_table" "devops-public-rt" {
     Name = var.public_route_table
   }
 
-  depends_on = [aws_vpc.devops-vpc,
+  depends_on = [
     aws_subnet.public-subnet-1a,
     aws_subnet.public-subnet-1b,
   aws_subnet.public-subnet-1c]
